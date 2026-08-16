@@ -1,0 +1,17 @@
+/* Italiana - used for headings */
+@font-face {
+    font-family: 'Italiana';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/Italiana-Regular.woff2') format('woff2');
+}
+
+/* Unica One - used for body text and navigation */
+@font-face {
+    font-family: 'Unica One';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/UnicaOne-Regular.woff2') format('woff2');
+}

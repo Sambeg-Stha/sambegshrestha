@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sambeg Stha</title>
+    <title>Sambeg Shrestha</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="background.css">
+    <link rel="stylesheet" href="nav.css">
+
 
     <style>
         * {
@@ -18,15 +22,17 @@
             justify-content: center;
             align-items: center;
             background: #f5f5f5;
-            font-family: Arial, sans-serif;
+            font-family: 'Unica One', Arial, sans-serif;
             text-align: center;
         }
 
         .container {
             padding: 2rem;
+            /* Adds space around the content inside the box */
         }
 
         h1 {
+            font-family: 'Italiana', serif;
             font-size: 3rem;
             color: #222;
             margin-bottom: 1rem;
@@ -36,12 +42,46 @@
             font-size: 1.2rem;
             color: #666;
         }
+
+        /* Mobile: smaller heading/text and lighter padding so nothing overflows */
+        @media (max-width: 600px) {
+            body {
+                height: auto;
+                min-height: 100vh;
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Background video: loops behind everything, stays fixed while scrolling -->
+    <video id="bg-video" class="bg-video" autoplay muted loop playsinline></video>
+    <!-- Dark overlay that keeps text readable on top of the video -->
+    <div class="bg-overlay"></div>
+
+    <nav id="main-nav" class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+            <!-- Each li = one nav item, each a = one clickable link -->
+            <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
-        <h1>Sambeg's Website</h1>
-        <p>The full website is coming soon.</p>
+        <h1>Sambeg Shrestha</h1>
     </div>
+
+    <script src="nav.js"></script>
+    <script src="background.js"></script>
 </body>
 </html>
