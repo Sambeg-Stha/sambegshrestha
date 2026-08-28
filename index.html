@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="background.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="floating.css">
 
 
     <style>
@@ -78,13 +79,73 @@
         </ul>
     </nav>
 
-    <div class="container">
-        <h1 data-animate="fade-up" data-animate-delay="0.1">Sambeg Shrestha</h1>
-        <p data-animate="fade-up" data-animate-delay="0.3">Website is Development Process</p>
-    </div>
+    <!-- Hero: central name with 4 floating project cards around it -->
+    <section class="hero">
+        <!-- ===== REUSABLE FLOATING PROJECT CARD =====
+             To add another one elsewhere on the site, copy this block and change:
+               float-card--N : the position number (see floating.css)
+               href          : your project link (put it here later)
+               src           : your project image
+               title/desc    : the text shown on hover
+             ========================================== -->
+        <a class="float-card float-card--1" href="#" data-animate="fade-up" data-animate-delay="0.2">
+            <span class="float-card__bob">
+                <span class="float-card__rot">
+                    <img class="float-card__media" src="assets/img1.png" alt="Project 1">
+                    <span class="float-card__info">
+                        <strong class="float-card__title">Project Alpha</strong>
+                        <span class="float-card__desc">Short description of this project.</span>
+                    </span>
+                </span>
+            </span>
+        </a>
+
+        <a class="float-card float-card--2" href="#" data-animate="fade-up" data-animate-delay="0.4">
+            <span class="float-card__bob">
+                <span class="float-card__rot">
+                    <img class="float-card__media" src="assets/img2.png" alt="Project 2">
+                    <span class="float-card__info">
+                        <strong class="float-card__title">Project Beta</strong>
+                        <span class="float-card__desc">Short description of this project.</span>
+                    </span>
+                </span>
+            </span>
+        </a>
+
+        <a class="float-card float-card--3" href="#" data-animate="fade-up" data-animate-delay="0.6">
+            <span class="float-card__bob">
+                <span class="float-card__rot">
+                    <img class="float-card__media" src="assets/img3.png" alt="Project 3">
+                    <span class="float-card__info">
+                        <strong class="float-card__title">Project Gamma</strong>
+                        <span class="float-card__desc">Short description of this project.</span>
+                    </span>
+                </span>
+            </span>
+        </a>
+
+        <a class="float-card float-card--4" href="#" data-animate="fade-up" data-animate-delay="0.8">
+            <span class="float-card__bob">
+                <span class="float-card__rot">
+                    <img class="float-card__media" src="assets/img4.png" alt="Project 4">
+                    <span class="float-card__info">
+                        <strong class="float-card__title">Project Delta</strong>
+                        <span class="float-card__desc">Short description of this project.</span>
+                    </span>
+                </span>
+            </span>
+        </a>
+
+        <!-- Central content: the name and tagline, still centered -->
+        <div class="hero__center">
+            <h1 data-animate="fade-up" data-animate-delay="0.1">Sambeg Shrestha</h1>
+            <p data-animate="fade-up" data-animate-delay="0.3">Website is Development Process</p>
+        </div>
+    </section>
 
     <script src="nav.js"></script>
     <script src="background.js"></script>
     <script src="animations.js"></script>
+    <script src="floating.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
 
     /* >>> EDIT THIS LINE to change the background video <<< */
     var CONFIG = {
-        videoSrc: 'assets/background.mp4'
+        videoSrc: 'assets/background_place'
     };
 
     var video = document.getElementById('bg-video');
