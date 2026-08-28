@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sambeg Shrestha</title>
     <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="background.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="animations.css">
 
 
     <style>
@@ -67,7 +68,7 @@
     <!-- Dark overlay that keeps text readable on top of the video -->
     <div class="bg-overlay"></div>
 
-    <nav id="main-nav" class="nav" aria-label="Main navigation">
+    <nav id="main-nav" class="nav" aria-label="Main navigation" data-animate="fade-up">
         <ul class="nav__list">
             <!-- Each li = one nav item, each a = one clickable link -->
             <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
@@ -78,11 +79,12 @@
     </nav>
 
     <div class="container">
-        <h1>Sambeg Shrestha</h1>
-        <p>Website is Development Process</p>
+        <h1 data-animate="fade-up" data-animate-delay="0.1">Sambeg Shrestha</h1>
+        <p data-animate="fade-up" data-animate-delay="0.3">Website is Development Process</p>
     </div>
 
     <script src="nav.js"></script>
     <script src="background.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>
