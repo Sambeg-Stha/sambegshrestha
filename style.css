@@ -4,11 +4,11 @@
     box-sizing: border-box;
     }
 /*    font-family: 'Italiana';*/
+
+html{
+    scroll-behavior: smooth;
+}
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background: hsl(0, 0%, 96%);
     font-family: 'JetBrainsMono', monospace;
     text-align: center;
@@ -41,16 +41,9 @@ p {
     }
 }
 
-@keyframes sway {
-    0%, 100% { transform: rotate(0deg); }
-    25%      { transform: rotate(var(--tilt, 1.2deg)); }
-    75%      { transform: rotate(calc(var(--tilt, 1.2deg) * -1)); }
-}
-
 .fade_in {
     animation:
-        fadein_animation 0.8s ease-in forwards,
-        sway 2s ease-in-out 1s infinite;
+        fadein_animation 0.8s ease-in forwards;
 }
 
 
@@ -102,6 +95,15 @@ p {
     color: #ffffff;
 }
 
+.page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
 /* Mobile: shrink and tighten the nav so all 4 items fit on one line */
 @media (max-width: 600px) {
     .nav {
@@ -118,9 +120,6 @@ p {
         padding: 0.25rem 0.5rem;
         white-space: nowrap;
     }
-}
-        /* Mobile: smaller heading/text and lighter padding so nothing overflows */
-@media (max-width: 600px) {
     body {
         height: auto;
         min-height: 100vh;
