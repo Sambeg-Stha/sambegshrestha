@@ -43,7 +43,7 @@ p {
 
 .fade_in {
     animation:
-        fadein_animation 0.8s ease-in forwards;
+        fadein_animation 0.7s ease-in forwards;
 }
 
 
@@ -102,6 +102,18 @@ p {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+/*page loading*/
+.page{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.page.is_visible{
+    opacity: 1;
+    transform: translate(0);
 }
 
 /* Mobile: shrink and tighten the nav so all 4 items fit on one line */
