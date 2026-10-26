@@ -1,7 +1,3 @@
-window.addEventListener('load', ()=>{
-    window.scrollTo({top:0, behavior: 'instant'});
-});
-
 const obveser = new IntersectionObserver((entries) => {
     entries.forEach(entry =>{
         if(entry.isIntersecting){

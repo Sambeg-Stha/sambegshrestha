@@ -5,9 +5,6 @@
     }
 /*    font-family: 'Italiana';*/
 
-html{
-    scroll-behavior: smooth;
-}
 body {
     background: hsl(0, 0%, 96%);
     font-family: 'JetBrainsMono', monospace;
