@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Grovebound key art">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3f5d9"/>
+      <stop offset="0.6" stop-color="#d7ebd8"/>
+      <stop offset="1" stop-color="#b6dccc"/>
+    </linearGradient>
+    <linearGradient id="island" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5d9c7b"/>
+      <stop offset="1" stop-color="#316a55"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="800"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="800" fill="url(#sky)"/>
+    <circle cx="920" cy="190" r="110" fill="#f9f3c8" opacity="0.9"/>
+    <circle cx="920" cy="190" r="150" fill="#ffffff" opacity="0.25"/>
+    <g fill="#9fcfbb" opacity="0.5">
+      <ellipse cx="320" cy="180" rx="140" ry="38"/>
+      <ellipse cx="640" cy="120" rx="110" ry="30"/>
+      <ellipse cx="1050" cy="330" rx="130" ry="34"/>
+    </g>
+    <g>
+      <path d="M250 470 L470 470 L420 560 L300 560 Z" fill="url(#island)"/>
+      <path d="M340 470 L410 400 L450 470 Z" fill="#3f8368"/>
+      <rect x="366" y="500" width="12" height="46" fill="#6d4c3d"/>
+      <circle cx="372" cy="486" r="34" fill="#4f8f64"/>
+      <circle cx="398" cy="502" r="24" fill="#5fa477"/>
+    </g>
+    <g>
+      <path d="M610 560 L880 560 L820 680 L670 680 Z" fill="url(#island)"/>
+      <path d="M720 560 L790 470 L850 560 Z" fill="#3f8368"/>
+      <rect x="748" y="606" width="14" height="58" fill="#6d4c3d"/>
+      <circle cx="755" cy="590" r="42" fill="#4f8f64"/>
+      <circle cx="790" cy="610" r="28" fill="#5fa477"/>
+      <circle cx="720" cy="615" r="22" fill="#67a97c"/>
+    </g>
+    <g>
+      <path d="M930 380 L1090 380 L1050 450 L970 450 Z" fill="url(#island)"/>
+      <rect x="1000" y="412" width="10" height="30" fill="#6d4c3d"/>
+      <circle cx="1005" cy="402" r="24" fill="#4f8f64"/>
+    </g>
+    <g stroke="#ffffff" stroke-width="2" opacity="0.55" fill="none">
+      <path d="M120 700 C 340 620, 520 720, 720 660"/>
+      <path d="M700 720 C 860 670, 1020 710, 1140 650"/>
+    </g>
+    <g fill="#ffffff" opacity="0.6">
+      <circle cx="180" cy="300" r="4"/>
+      <circle cx="470" cy="250" r="3"/>
+      <circle cx="760" cy="230" r="4"/>
+      <circle cx="1080" cy="480" r="3"/>
+      <circle cx="540" cy="400" r="3"/>
+    </g>
+  </g>
+</svg>

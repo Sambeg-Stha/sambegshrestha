@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About &mdash; Sambeg Shrestha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js?v=5" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="index.html">Home</a></li>
+                <li><a class="nav__link" href="about.html" aria-current="page">About</a></li>
+                <li><a class="nav__link" href="work.html">Works</a></li>
+                <li><a class="nav__link" href="contact.html">Contacts</a></li>
+                <li class="nav__more">
+                    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-dropdown" aria-label="More options">
+                        <span class="nav__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="nav__dropdown" id="nav-dropdown" hidden>
+                        <p class="nav__dropdown-title">More</p>
+                        <div class="nav__dropdown-space">
+                            <!-- Theme, sounds and other options will go here -->
+                            <span>Theme &middot; Sounds &middot; More<br>coming soon</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about">
+        <!-- Intro: profile picture on the left, about text on the right -->
+        <section class="about-intro" aria-labelledby="about-title">
+            <div class="about-intro__aside">
+                <figure class="about-portrait">
+                    <img class="about-portrait__image" src="assets/profile.jpg" alt="Portrait of Sambeg Shrestha" width="1000" height="1000">
+                </figure>
+
+                <!-- Small extra text area directly under the profile square -->
+                <div class="about-note">
+                    <p class="about-note__title">Currently</p>
+                    <p class="about-note__text">Bachelor's in Computer Engineering, Kathmandu University</p>
+                    <p class="about-note__text">Research Trainee at Health Informatics Lab, KU</p>
+                </div>
+            </div>
+
+            <div class="about-intro__body">
+                <h1 class="about-title" id="about-title">About Me</h1>
+                <div class="about-copy">
+                    <p class="about-copy__lead">I am Sambeg Shrestha from Nepal, currently purusing Bachelor in Computer Engineering in Kathmandu University as a 3rd year student, having
+                        strong interest in programming, system design and development, gamedevelopment, art and animation.
+                    </p>
+                    <p class="about-copy">
+                        My current area of focus includes system-level programming, developing proficiency in C and Rust programing to aquire understanding of system develpment and memory management
+                    </p>
+                    <p class="about-copy">
+                        I am also exploring Reinforcement Learning, couducting research on FLOOD IT puzzle game as a member for the HI Lab
+                    </p>
+                    <p class = "about-copy">
+                        Additionally, I am currently working on a game develpment project using the Godot Game Engine
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Educational background -->
+        <section class="about-green" aria-labelledby="education-title">
+            <h2 class="about-green__title" id="education-title">Educational Background</h2>
+
+            <div class="education">
+                <div class="education__item education__item--top education__item--lg">
+                    <div class="education__text">
+                        <p class="education__degree">Bachelor's Degree in Computer Engineering</p>
+                        <p class="education__school">Kathmandu University, Dhulikhel</p>
+                        <p class="education__years">2024 &mdash; 2028</p>
+                    </div>
+                    <img class="education__diamond education__diamond--lg" src="icon/diamond.svg" alt="">
+                </div>
+
+                <div class="education__item education__item--bottom education__item--md">
+                    <img class="education__diamond education__diamond--md" src="icon/diamond.svg" alt="">
+                    <div class="education__text">
+                        <p class="education__degree">Higher Secondary School (+2)</p>
+                        <p class="education__school">Global School of Science, Kathmandu</p>
+                        <p class="education__years">2022 &mdash; 2024</p>
+                    </div>
+                </div>
+
+                <div class="education__item education__item--top education__item--sm">
+                    <div class="education__text">
+                        <p class="education__degree">Secondary Education Examination (SEE)</p>
+                        <p class="education__school">Nobel Academy</p>
+                        <p class="education__years">2021</p>
+                    </div>
+                    <img class="education__diamond education__diamond--sm" src="icon/diamond.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Interest and works -->
+        <section class="about-red" aria-labelledby="interests-title">
+            <div class="about-red__inner">
+                <h2 class="about-red__title" id="interests-title">Interest &amp; Works</h2>
+
+                <div class="interests" data-interests>
+                    <div class="interests__sidebar">
+                        <ul class="interests__list">
+                            <li class="interests__item">
+                                <button class="interests__button" type="button" data-interest="Game Development" aria-pressed="false">
+                                    <span class="interests__label">Game Development</span>
+                                    <span class="interests__arrow" aria-hidden="true"></span>
+                                </button>
+                            </li>
+                            <li class="interests__item">
+                                <button class="interests__button" type="button" data-interest="Software Design and Development" aria-pressed="false">
+                                    <span class="interests__label">Software Design and Development</span>
+                                    <span class="interests__arrow" aria-hidden="true"></span>
+                                </button>
+                            </li>
+                            <li class="interests__item">
+                                <button class="interests__button" type="button" data-interest="Art and Drawing" aria-pressed="false">
+                                    <span class="interests__label">Art and Drawing</span>
+                                    <span class="interests__arrow" aria-hidden="true"></span>
+                                </button>
+                            </li>
+                            <li class="interests__item">
+                                <button class="interests__button" type="button" data-interest="Embedded System Development" aria-pressed="false">
+                                    <span class="interests__label">Embedded System Development</span>
+                                    <span class="interests__arrow" aria-hidden="true"></span>
+                                </button>
+                            </li>
+                            <li class="interests__item">
+                                <button class="interests__button" type="button" data-interest="SFM 3D Animation" aria-pressed="false">
+                                    <span class="interests__label">SFM 3D Animation</span>
+                                    <span class="interests__arrow" aria-hidden="true"></span>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="interests__content" aria-live="polite">
+                        <p class="interests__content-text" data-interest-output>Select a topic to see related work.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Other interests -->
+        <section class="about-yellow" aria-labelledby="other-interests-title">
+            <div class="about-yellow__inner">
+                <h2 class="about-yellow__title" id="other-interests-title">Other Interest</h2>
+
+                <!-- To add another interest, copy one <details class="other-interest"> block below. -->
+                <div class="other-interests">
+                    <details class="other-interest">
+                        <summary class="other-interest__summary">
+                            <span class="other-interest__name">Reading</span>
+                            <span class="other-interest__arrow" aria-hidden="true"></span>
+                        </summary>
+                        <div class="other-interest__panel">
+                            <p>Reading facsinating novels and self help books to gain knowladge and insperation
+                            </p>
+                        </div>
+                    </details>
+
+                    <details class="other-interest">
+                        <summary class="other-interest__summary">
+                            <span class="other-interest__name">Journaling</span>
+                            <span class="other-interest__arrow" aria-hidden="true"></span>
+                        </summary>
+                        <div class="other-interest__panel">
+                            <p>Writing down thoughts and ideas in to a notebook, planning the next days for produtivity</p>
+                        </div>
+                    </details>
+
+                    <details class="other-interest">
+                        <summary class="other-interest__summary">
+                            <span class="other-interest__name">Games</span>
+                            <span class="other-interest__arrow" aria-hidden="true"></span>
+                        </summary>
+                        <div class="other-interest__panel">
+                            <p>Playing games - mostly story driven - for insperation, life lessons and enjoyment with firends and family.</p>
+                        </div>
+                    </details>
+
+                    <details class="other-interest">
+                        <summary class="other-interest__summary">
+                            <span class="other-interest__name">Dancing</span>
+                            <span class="other-interest__arrow" aria-hidden="true"></span>
+                        </summary>
+                        <div class="other-interest__panel">
+                            <p>Expressing oneself through the means of planned movements, practice and as a form of recreation activities.</p>
+                        </div>
+                    </details>
+
+                    <details class="other-interest">
+                        <summary class="other-interest__summary">
+                            <span class="other-interest__name">Guitar</span>
+                            <span class="other-interest__arrow" aria-hidden="true"></span>
+                        </summary>
+                        <div class="other-interest__panel">
+                            <p>Learnig to play my favroite songs as means of enjoyment, relaxation and events.</p>
+                        </div>
+                    </details>
+
+                    <details class="other-interest">
+                        <summary class="other-interest__summary">
+                            <span class="other-interest__name">Graphic Design</span>
+                            <span class="other-interest__arrow" aria-hidden="true"></span>
+                        </summary>
+                        <div class="other-interest__panel">
+                            <p>Desgining and producing custom illustration with intent on learning principles for entertainment, learning and projects.</p>
+                        </div>
+                    </details>
+
+                    <details class="other-interest">
+                        <summary class="other-interest__summary">
+                            <span class="other-interest__name">DIY Projects</span>
+                            <span class="other-interest__arrow" aria-hidden="true"></span>
+                        </summary>
+                        <div class="other-interest__panel">
+                            <p>Using Cardboard, paint, glue, tape, motivation and imagination to create something beautiful.</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Small black spacer below the yellow section -->
+        <div class="about-black" aria-hidden="true"></div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Aero Rudder Rig key art">
+  <defs>
+    <linearGradient id="board" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1828"/>
+      <stop offset="1" stop-color="#122b45"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="800"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="800" fill="url(#board)"/>
+    <g stroke="#3f6d92" stroke-width="1" opacity="0.45">
+      <path d="M0 80 H1200 M0 160 H1200 M0 240 H1200 M0 320 H1200 M0 400 H1200 M0 480 H1200 M0 560 H1200 M0 640 H1200 M0 720 H1200"/>
+      <path d="M80 0 V800 M160 0 V800 M240 0 V800 M320 0 V800 M400 0 V800 M480 0 V800 M560 0 V800 M640 0 V800 M720 0 V800 M800 0 V800 M880 0 V800 M960 0 V800 M1040 0 V800 M1120 0 V800"/>
+    </g>
+    <g fill="none" stroke="#8fd3ff" stroke-width="3">
+      <path d="M170 430 C 330 300, 640 280, 860 380 C 950 420, 990 470, 1000 520 C 880 560, 620 570, 430 530 C 300 505, 210 475, 170 430 Z"/>
+      <path d="M860 380 L1030 250 L1060 280 L1000 520"/>
+      <path d="M1000 520 L1080 600 L1040 630 L860 560"/>
+    </g>
+    <g fill="none" stroke="#ffb347" stroke-width="2.5">
+      <path d="M240 500 L240 610"/>
+      <path d="M330 526 L330 636"/>
+      <path d="M420 542 L420 652"/>
+      <path d="M510 552 L510 662"/>
+      <path d="M600 556 L600 666"/>
+      <path d="M690 552 L690 662"/>
+      <path d="M780 540 L780 650"/>
+    </g>
+    <g stroke="#ffb347" stroke-width="2" opacity="0.8">
+      <path d="M220 610 H800"/>
+      <path d="M220 600 V620 M800 600 V620"/>
+    </g>
+    <g fill="none" stroke="#8fd3ff" stroke-width="2" opacity="0.8">
+      <circle cx="990" cy="330" r="44"/>
+      <path d="M990 286 V374 M946 330 H1034"/>
+      <circle cx="990" cy="330" r="7" fill="#8fd3ff"/>
+    </g>
+    <g fill="none" stroke="#ffb347" stroke-width="2" opacity="0.8">
+      <path d="M1010 645 A 90 90 0 0 1 1130 645"/>
+      <path d="M1070 645 L1090 600"/>
+      <circle cx="1070" cy="645" r="5" fill="#ffb347"/>
+    </g>
+    <g font-family="monospace" font-size="18" fill="#8fd3ff" opacity="0.65">
+      <text x="150" y="120">AERO / RUDDER RIG</text>
+      <text x="150" y="150">SCALE 1:12 · WIND TUNNEL</text>
+    </g>
+    <path d="M1120 60 V140 H1040" fill="none" stroke="#ffb347" stroke-width="2" opacity="0.8"/>
+    <circle cx="1120" cy="60" r="5" fill="#ffb347"/>
+  </g>
+</svg>

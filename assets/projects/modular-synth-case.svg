@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Modular Synth Case key art">
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5a3a22"/>
+      <stop offset="0.5" stop-color="#3c2618"/>
+      <stop offset="1" stop-color="#24160e"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#232a2e"/>
+      <stop offset="1" stop-color="#151a1d"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="800"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="800" fill="url(#wood)"/>
+    <g stroke="#7a5433" stroke-width="2" opacity="0.35" fill="none">
+      <path d="M0 120 C 300 90, 500 160, 800 110 S 1100 150, 1200 120"/>
+      <path d="M0 220 C 260 180, 520 260, 820 210 S 1120 250, 1200 220"/>
+      <path d="M0 620 C 320 590, 540 660, 860 610 S 1140 650, 1200 620"/>
+      <path d="M0 720 C 280 680, 520 760, 840 710 S 1120 750, 1200 720"/>
+    </g>
+    <rect x="120" y="170" width="960" height="460" rx="14" fill="#1b120c" stroke="#8a6039" stroke-width="10"/>
+    <rect x="160" y="210" width="880" height="380" rx="6" fill="url(#panel)" stroke="#3c4a50" stroke-width="3"/>
+    <g stroke="#3c4a50" stroke-width="2">
+      <path d="M380 210 V590 M600 210 V590 M820 210 V590"/>
+    </g>
+    <g>
+      <circle cx="270" cy="300" r="44" fill="#0d1113" stroke="#d8e2e6" stroke-width="4"/>
+      <path d="M270 300 L270 264" stroke="#ff8c42" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="270" cy="420" r="32" fill="#0d1113" stroke="#d8e2e6" stroke-width="4"/>
+      <path d="M270 420 L292 402" stroke="#5ad1c8" stroke-width="5" stroke-linecap="round"/>
+      <rect x="222" y="500" width="96" height="10" rx="5" fill="#0d1113"/>
+      <circle cx="250" cy="505" r="14" fill="#ff8c42"/>
+      <rect x="222" y="540" width="96" height="10" rx="5" fill="#0d1113"/>
+      <circle cx="310" cy="545" r="14" fill="#d8e2e6"/>
+    </g>
+    <g>
+      <circle cx="490" cy="290" r="36" fill="#0d1113" stroke="#5ad1c8" stroke-width="4"/>
+      <path d="M490 290 L490 262" stroke="#d8e2e6" stroke-width="5" stroke-linecap="round"/>
+      <circle cx="490" cy="400" r="36" fill="#0d1113" stroke="#ff8c42" stroke-width="4"/>
+      <path d="M490 400 L466 422" stroke="#d8e2e6" stroke-width="5" stroke-linecap="round"/>
+      <rect x="440" y="480" width="100" height="8" rx="4" fill="#0d1113"/>
+      <rect x="440" y="510" width="100" height="8" rx="4" fill="#0d1113"/>
+      <circle cx="470" cy="484" r="11" fill="#5ad1c8"/>
+      <circle cx="515" cy="514" r="11" fill="#ff8c42"/>
+    </g>
+    <g>
+      <rect x="700" y="260" width="60" height="120" rx="8" fill="#0d1113" stroke="#3c4a50" stroke-width="3"/>
+      <rect x="716" y="276" width="28" height="70" rx="4" fill="#5ad1c8" opacity="0.8"/>
+      <rect x="790" y="260" width="60" height="120" rx="8" fill="#0d1113" stroke="#3c4a50" stroke-width="3"/>
+      <rect x="806" y="300" width="28" height="70" rx="4" fill="#ff8c42" opacity="0.8"/>
+      <circle cx="775" cy="470" r="42" fill="#0d1113" stroke="#d8e2e6" stroke-width="4"/>
+      <path d="M775 470 L775 436" stroke="#d8e2e6" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g>
+      <circle cx="940" cy="300" r="34" fill="#0d1113" stroke="#ff8c42" stroke-width="4"/>
+      <circle cx="940" cy="300" r="12" fill="#ff8c42"/>
+      <circle cx="940" cy="400" r="34" fill="#0d1113" stroke="#5ad1c8" stroke-width="4"/>
+      <circle cx="940" cy="400" r="12" fill="#5ad1c8"/>
+      <rect x="890" y="490" width="100" height="44" rx="6" fill="#0d1113" stroke="#3c4a50" stroke-width="2"/>
+      <path d="M900 512 H980" stroke="#d8e2e6" stroke-width="2" stroke-dasharray="4 6"/>
+    </g>
+    <g fill="#d8e2e6" font-family="monospace" font-size="16" opacity="0.55">
+      <text x="220" y="660">MODULAR CASE / 6U</text>
+      <text x="840" y="660">PWR · 12V</text>
+    </g>
+    <circle cx="1060" cy="700" r="6" fill="#ff8c42"/>
+    <circle cx="1090" cy="700" r="6" fill="#5ad1c8"/>
+    <circle cx="1120" cy="700" r="6" fill="#d8e2e6"/>
+  </g>
+</svg>

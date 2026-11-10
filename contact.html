@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts &mdash; Sambeg Shrestha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js?v=5" defer></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="index.html">Home</a></li>
+                <li><a class="nav__link" href="about.html">About</a></li>
+                <li><a class="nav__link" href="work.html">Works</a></li>
+                <li><a class="nav__link" href="contact.html" aria-current="page">Contacts</a></li>
+                <li class="nav__more">
+                    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-dropdown" aria-label="More options">
+                        <span class="nav__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="nav__dropdown" id="nav-dropdown" hidden>
+                        <p class="nav__dropdown-title">More</p>
+                        <div class="nav__dropdown-space">
+                            <!-- Theme, sounds and other options will go here -->
+                            <span>Theme &middot; Sounds &middot; More<br>coming soon</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page page--contacts">
+        <h1>Contacts</h1>
+
+        <ul class="contact-grid" data-contacts>
+            <li class="contact-card contact-card--gmail">
+                <button class="contact-card__button" type="button" data-contact="Gmail" aria-label="Open Gmail">
+                    <span class="contact-card__glyph" aria-hidden="true"></span>
+                </button>
+                <div class="contact-card__info">
+                    <h2 class="contact-card__name">Gmail</h2>
+                    <p class="contact-card__detail">
+                        <a class="contact-card__link" href="mailto:sambegshrestha2006@gmail.com">sambegshrestha2006@gmail.com</a>
+                    </p>
+                    <p class="contact-card__detail">For work, commissions and general enquiries.</p>
+                </div>
+            </li>
+
+            <li class="contact-card contact-card--youtube">
+                <button class="contact-card__button" type="button" data-contact="YouTube" aria-label="Open YouTube">
+                    <span class="contact-card__glyph" aria-hidden="true"></span>
+                </button>
+                <div class="contact-card__info">
+                    <h2 class="contact-card__name">JDMB SFM</h2>
+                    <p class="contact-card__detail">
+                        <a class="contact-card__link" href="http://www.youtube.com/@Jdmbsfm" target="_blank" rel="noopener noreferrer">youtube.com/@Jdmbsfm</a>
+                    </p>
+                    <p class="contact-card__detail">Devlogs, time-lapses and animation work.</p>
+                </div>
+            </li>
+
+            <li class="contact-card contact-card--itch">
+                <button class="contact-card__button" type="button" data-contact="itch.io" aria-label="Open itch.io">
+                    <span class="contact-card__glyph" aria-hidden="true"></span>
+                </button>
+                <div class="contact-card__info">
+                    <h2 class="contact-card__name">itch.io</h2>
+                    <p class="contact-card__detail">
+                        <a class="contact-card__link" href="https://sambegshrestha.itch.io" target="_blank" rel="noopener noreferrer">sambegshrestha.itch.io</a>
+                    </p>
+                    <p class="contact-card__detail">Games and playable experiments.</p>
+                </div>
+            </li>
+
+            <li class="contact-card contact-card--linkedin">
+                <button class="contact-card__button" type="button" data-contact="LinkedIn" aria-label="Open LinkedIn">
+                    <span class="contact-card__glyph" aria-hidden="true"></span>
+                </button>
+                <div class="contact-card__info">
+                    <h2 class="contact-card__name">LinkedIn</h2>
+                    <p class="contact-card__detail">
+                        <a class="contact-card__link" href="https://www.linkedin.com/in/sambegshrestha" target="_blank" rel="noopener noreferrer">linkedin.com/in/sambegshrestha</a>
+                    </p>
+                    <p class="contact-card__detail">Professional profile and experience.</p>
+                </div>
+            </li>
+
+            <li class="contact-card contact-card--github">
+                <button class="contact-card__button" type="button" data-contact="GitHub" aria-label="Open GitHub">
+                    <span class="contact-card__glyph" aria-hidden="true"></span>
+                </button>
+                <div class="contact-card__info">
+                    <h2 class="contact-card__name">GitHub</h2>
+                    <p class="contact-card__detail">
+                        <a class="contact-card__link" href="https://github.com/Sambeg-Stha" target="_blank" rel="noopener noreferrer">github.com/Sambeg-Stha</a>
+                    </p>
+                    <p class="contact-card__detail">Code, projects and experiments.</p>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+</body>
+</html>

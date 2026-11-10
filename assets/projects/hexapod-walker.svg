@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Hexapod Walker key art">
+  <defs>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#191c22"/>
+      <stop offset="1" stop-color="#0c0e12"/>
+    </linearGradient>
+    <radialGradient id="spot" cx="0.5" cy="0.45" r="0.55">
+      <stop offset="0" stop-color="#3a4554" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#0c0e12" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="1200" height="800"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="800" fill="url(#floor)"/>
+    <ellipse cx="600" cy="430" rx="460" ry="300" fill="url(#spot)"/>
+    <g stroke="#2c333d" stroke-width="1.5" opacity="0.7">
+      <path d="M0 600 L600 400 L1200 600"/>
+      <path d="M0 680 L600 480 L1200 680"/>
+      <path d="M0 760 L600 560 L1200 760"/>
+      <path d="M300 800 L600 400 L900 800"/>
+      <path d="M150 800 L600 400 L1050 800"/>
+    </g>
+    <g fill="none" stroke="#c8d2de" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M510 400 L400 330 L300 260 L210 300"/>
+      <path d="M540 380 L450 290 L360 200 L270 200"/>
+      <path d="M560 430 L420 430 L280 430 L190 500"/>
+      <path d="M640 430 L780 430 L920 430 L1010 500"/>
+      <path d="M660 380 L750 290 L840 200 L930 200"/>
+      <path d="M690 400 L800 330 L900 260 L990 300"/>
+    </g>
+    <g fill="#ff8c42">
+      <circle cx="300" cy="260" r="12"/>
+      <circle cx="360" cy="200" r="12"/>
+      <circle cx="280" cy="430" r="12"/>
+      <circle cx="920" cy="430" r="12"/>
+      <circle cx="840" cy="200" r="12"/>
+      <circle cx="900" cy="260" r="12"/>
+      <circle cx="210" cy="300" r="9"/>
+      <circle cx="270" cy="200" r="9"/>
+      <circle cx="190" cy="500" r="9"/>
+      <circle cx="1010" cy="500" r="9"/>
+      <circle cx="930" cy="200" r="9"/>
+      <circle cx="990" cy="300" r="9"/>
+    </g>
+    <g>
+      <path d="M500 330 H700 L740 400 L700 470 H500 L460 400 Z" fill="#2b333d" stroke="#c8d2de" stroke-width="5"/>
+      <circle cx="600" cy="400" r="52" fill="#161a20" stroke="#ff8c42" stroke-width="5"/>
+      <circle cx="600" cy="400" r="18" fill="#ff8c42"/>
+      <rect x="526" y="352" width="26" height="12" rx="4" fill="#ff8c42"/>
+      <rect x="648" y="352" width="26" height="12" rx="4" fill="#ff8c42"/>
+    </g>
+    <g fill="#ff8c42" opacity="0.6">
+      <circle cx="600" cy="690" r="70" fill="none" stroke="#ff8c42" stroke-width="2"/>
+      <circle cx="600" cy="690" r="110" fill="none" stroke="#ff8c42" stroke-width="1.5" opacity="0.4"/>
+    </g>
+  </g>
+</svg>

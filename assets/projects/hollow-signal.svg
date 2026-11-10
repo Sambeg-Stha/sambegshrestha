@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Hollow Signal key art">
+  <defs>
+    <linearGradient id="fog" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08110f"/>
+      <stop offset="0.55" stop-color="#122520"/>
+      <stop offset="1" stop-color="#1d3a31"/>
+    </linearGradient>
+    <radialGradient id="beacon" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ff5a4d" stop-opacity="0.85"/>
+      <stop offset="0.4" stop-color="#ff5a4d" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ff5a4d" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="1200" height="800"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="800" fill="url(#fog)"/>
+    <g fill="none" stroke="#7fd8b8" opacity="0.18" stroke-width="2">
+      <ellipse cx="770" cy="300" rx="170" ry="60"/>
+      <ellipse cx="770" cy="300" rx="260" ry="95"/>
+      <ellipse cx="770" cy="300" rx="360" ry="135"/>
+      <ellipse cx="770" cy="300" rx="470" ry="180"/>
+    </g>
+    <circle cx="770" cy="300" r="260" fill="url(#beacon)"/>
+    <g fill="#060c0a">
+      <path d="M760 300 L780 300 L796 660 L744 660 Z"/>
+      <path d="M746 560 L794 560 L804 660 L736 660 Z"/>
+      <path d="M744 480 H796 V495 H744 Z"/>
+      <path d="M750 395 H790 V410 H750 Z"/>
+      <path d="M700 660 H840 V680 H700 Z"/>
+    </g>
+    <g stroke="#060c0a" stroke-width="3" fill="none">
+      <path d="M770 395 L690 330"/>
+      <path d="M770 395 L850 330"/>
+      <path d="M770 480 L660 420"/>
+      <path d="M770 480 L880 420"/>
+    </g>
+    <circle cx="770" cy="300" r="10" fill="#ff5a4d"/>
+    <circle cx="770" cy="300" r="26" fill="none" stroke="#ff5a4d" stroke-width="2" opacity="0.7"/>
+    <g fill="#0d1a16">
+      <path d="M0 660 L120 560 L260 660 Z"/>
+      <path d="M980 660 L1110 540 L1200 660 Z"/>
+      <path d="M120 660 L300 500 L460 660 Z"/>
+      <path d="M700 660 L860 520 L1010 660 Z"/>
+    </g>
+    <rect y="660" width="1200" height="140" fill="#060c0a"/>
+    <rect y="660" width="1200" height="2" fill="#7fd8b8" opacity="0.25"/>
+  </g>
+</svg>

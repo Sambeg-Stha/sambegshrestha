@@ -6,9 +6,174 @@
     <title>Sambeg Shrestha</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
-    <script src="script.js" defer></script>
+    <script src="script.js?v=5" defer></script>
 </head>
 <body>
-    <!---->
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+                <li><a class="nav__link" href="about.html">About</a></li>
+                <li><a class="nav__link" href="work.html">Works</a></li>
+                <li><a class="nav__link" href="contact.html">Contacts</a></li>
+                <li class="nav__more">
+                    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-dropdown" aria-label="More options">
+                        <span class="nav__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="nav__dropdown" id="nav-dropdown" hidden>
+                        <p class="nav__dropdown-title">More</p>
+                        <div class="nav__dropdown-space">
+                            <!-- Theme, sounds and other options will go here -->
+                            <span>Theme &middot; Sounds &middot; More<br>coming soon</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home">
+        <!-- Custom background video: the video fills this entire section -->
+        <section class="hero-video" aria-label="Custom background video">
+            <video class="hero-video__media" autoplay muted loop playsinline preload="none">
+                <!-- Add your video source here, e.g. <source src="assets/your-video.mp4" type="video/mp4"> -->
+            </video>
+            <!-- Temporary message shown while the video is not in place yet -->
+            <p class="hero-video__placeholder">the webpage is still under development, enjoy</p>
+        </section>
+
+        <!-- Short about section (same size as the video area) -->
+        <section class="about-teaser" aria-label="Short about section">
+            <!-- Editable text: click to type, then use Ctrl+B / Ctrl+I for bold and italic.
+                 Headings, paragraphs, lists, links and blockquotes are all styled below. -->
+            <div class="about-teaser__copy" contenteditable="true" spellcheck="true" aria-label="Introduction text" title="Click to edit this text">
+                <p class="about-teaser__kicker">Hello, I'm</p>
+                <h2 class="about-teaser__heading">Sambeg Shrestha</h2>
+                <p class="about-teaser__lead">Undergraduate student pursuing a Bachelor's degree in Computer Engineering at Kathmandu University</p>
+                <p>I have a strong interest in the development and design of systems, which includes software application, embedded systems and currently 
+                    in the position of Research Trainee at <a href="https://hilab.ku.edu.np/">Health Informatics(HI) Lab KU</a>.
+                </p>
+                <p>My area of interest also extends to Game develpoment, having some expreience making small games using the <b>Unity Game Engine</b> and am currently learning to use the <b>Godot Game Engine</b></p>
+            </div>
+
+            <!-- Profile picture -->
+            <figure class="teaser-portrait">
+                <img class="teaser-portrait__image" src="assets/profile.jpg" alt="Portrait of Sambeg Shrestha" width="1000" height="1000">
+            </figure>
+
+            <div class="about-teaser__copy" contenteditable="true" spellcheck="true" aria-label="Additional text" title="Click to edit this text">
+            <p>Beyond the feild of programming, I have a passion of art, illustration and animation. I'm currently working on my own comic/cartoon project <b>"The Radiance"</b> which i aim to release next year.
+                    I also regularly draw and practice many hobbies working on smaller personal art projects to imporve my skills and exprement with different style and method
+                </p>
+                <p>
+                    Additionally, I also involve myself in 3D animation using <b>Source Film Maker(SFM)</b> mainly focusing on character for the horror game series <i>Five Nights at Freddy's</i> with project including funny videos compilation and short music videos.
+                </p>
+            </div>
+        </section>
+
+        <div class="section-divider">
+            <span class="section-divider__line" aria-hidden="true"></span>
+            <h2 class="section-divider__title" id="current-projects-title">CURRENT PROJECTS</h2>
+            <span class="section-divider__line" aria-hidden="true"></span>
+        </div>
+
+        <section class="projects" aria-labelledby="current-projects-title">
+            <div class="carousel" data-carousel>
+                <button class="carousel__arrow carousel__arrow--prev" type="button" aria-label="Show previous projects" data-carousel-prev>
+                    <span class="carousel__arrow-icon carousel__arrow-icon--prev" aria-hidden="true"></span>
+                </button>
+
+                <div class="carousel__viewport">
+                    <ul class="carousel__track" data-carousel-track>
+                        <li class="carousel__slide">
+                            <button class="project" type="button" data-project="Project 01" aria-label="Open Project 01">
+                                <img class="project__icon" src="icon/red-square.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="carousel__slide">
+                            <button class="project" type="button" data-project="Project 02" aria-label="Open Project 02">
+                                <img class="project__icon" src="icon/red-square.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="carousel__slide">
+                            <button class="project" type="button" data-project="Project 03" aria-label="Open Project 03">
+                                <img class="project__icon" src="icon/red-square.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="carousel__slide">
+                            <button class="project" type="button" data-project="Project 04" aria-label="Open Project 04">
+                                <img class="project__icon" src="icon/red-square.svg" alt="">
+                            </button>
+                        </li>
+                        <li class="carousel__slide">
+                            <button class="project" type="button" data-project="Project 05" aria-label="Open Project 05">
+                                <img class="project__icon" src="icon/red-square.svg" alt="">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="carousel__arrow carousel__arrow--next" type="button" aria-label="Show next projects" data-carousel-next>
+                    <span class="carousel__arrow-icon carousel__arrow-icon--next" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Short contact section -->
+        <section class="contact-teaser" aria-labelledby="places-title">
+            <h2 class="places__title" id="places-title">Places to Find me</h2>
+
+            <ul class="places__list">
+                <li class="places__item">
+                    <a class="places__link places__link--gmail" href="mailto:sambegshrestha2006@gmail.com">
+                        <span class="places__badge">
+                            <span class="places__icon" aria-hidden="true"></span>
+                        </span>
+                        <span class="places__name">Gmail</span>
+                        <span class="places__detail">sambegshrestha2006@gmail.com</span>
+                    </a>
+                </li>
+                <li class="places__item">
+                    <a class="places__link places__link--youtube" href="http://www.youtube.com/@Jdmbsfm" target="_blank" rel="noopener noreferrer">
+                        <span class="places__badge">
+                            <span class="places__icon" aria-hidden="true"></span>
+                        </span>
+                        <span class="places__name">JDMB SFM</span>
+                        <span class="places__detail">Animation channel</span>
+                        <span class="places__detail">youtube.com/@Jdmbsfm</span>
+                    </a>
+                </li>
+                <li class="places__item">
+                    <a class="places__link places__link--itch" href="https://sambegshrestha.itch.io" target="_blank" rel="noopener noreferrer">
+                        <span class="places__badge">
+                            <span class="places__icon" aria-hidden="true"></span>
+                        </span>
+                        <span class="places__name">itch.io</span>
+                        <span class="places__detail">sambegshrestha.itch.io</span>
+                    </a>
+                </li>
+                <li class="places__item">
+                    <a class="places__link places__link--linkedin" href="https://www.linkedin.com/in/sambegshrestha" target="_blank" rel="noopener noreferrer">
+                        <span class="places__badge">
+                            <span class="places__icon" aria-hidden="true"></span>
+                        </span>
+                        <span class="places__name">LinkedIn</span>
+                        <span class="places__detail">in/sambegshrestha</span>
+                    </a>
+                </li>
+                <li class="places__item">
+                    <a class="places__link places__link--github" href="https://github.com/Sambeg-Stha" target="_blank" rel="noopener noreferrer">
+                        <span class="places__badge">
+                            <span class="places__icon" aria-hidden="true"></span>
+                        </span>
+                        <span class="places__name">GitHub</span>
+                        <span class="places__detail">@Sambeg-Stha</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
 </body>
 </html>

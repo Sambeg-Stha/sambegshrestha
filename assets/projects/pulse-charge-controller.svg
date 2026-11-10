@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Pulse Charge Controller key art">
+  <defs>
+    <linearGradient id="pcb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071a10"/>
+      <stop offset="1" stop-color="#0e2b1c"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="800"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="800" fill="url(#pcb)"/>
+    <g fill="none" stroke="#c9a227" stroke-width="2.5" opacity="0.75">
+      <path d="M80 180 H320 L360 220 H520"/>
+      <path d="M80 300 H260 L300 260 H520"/>
+      <path d="M80 500 H240 L290 550 H520"/>
+      <path d="M80 640 H360 L400 600 H520"/>
+      <path d="M700 220 H860 L910 270 H1120"/>
+      <path d="M700 400 H940 L980 360 H1120"/>
+      <path d="M700 560 H820 L870 610 H1120"/>
+      <path d="M700 660 H900 L940 620 H1120"/>
+    </g>
+    <g fill="#c9a227" opacity="0.9">
+      <circle cx="160" cy="180" r="7"/>
+      <circle cx="160" cy="300" r="7"/>
+      <circle cx="160" cy="500" r="7"/>
+      <circle cx="160" cy="640" r="7"/>
+      <circle cx="1040" cy="270" r="7"/>
+      <circle cx="1040" cy="400" r="7"/>
+      <circle cx="1040" cy="610" r="7"/>
+      <circle cx="1040" cy="660" r="7"/>
+    </g>
+    <rect x="520" y="180" width="180" height="470" rx="8" fill="#0b1f15" stroke="#c9a227" stroke-width="3"/>
+    <g stroke="#c9a227" stroke-width="2">
+      <path d="M545 200 V630 M565 200 V630 M585 200 V630 M605 200 V630 M625 200 V630 M645 200 V630 M665 200 V630"/>
+    </g>
+    <g fill="#f2d24b">
+      <circle cx="870" cy="220" r="42"/>
+      <circle cx="980" cy="220" r="42"/>
+      <rect x="840" y="300" width="170" height="80" rx="6"/>
+      <circle cx="870" cy="520" r="56"/>
+      <rect x="860" y="600" width="180" height="60" rx="6"/>
+    </g>
+    <g fill="#071a10">
+      <circle cx="870" cy="220" r="24"/>
+      <circle cx="980" cy="220" r="24"/>
+      <circle cx="870" cy="520" r="32"/>
+      <path d="M880 600 H940 V660 H880 Z"/>
+    </g>
+    <g fill="none" stroke="#4fd18b" stroke-width="2" opacity="0.7">
+      <path d="M700 220 V420 M700 420 H760 V470"/>
+      <circle cx="760" cy="490" r="16"/>
+    </g>
+    <g font-family="monospace" font-size="20" fill="#f2d24b">
+      <text x="520" y="720">PULSE / MPPT-24</text>
+    </g>
+    <g fill="#4fd18b" opacity="0.5">
+      <circle cx="1130" cy="120" r="28"/>
+      <circle cx="960" cy="720" r="14"/>
+    </g>
+  </g>
+</svg>

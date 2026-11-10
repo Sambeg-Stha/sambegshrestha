@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works &mdash; Sambeg Shrestha</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="script.js?v=5" defer></script>
+</head>
+<body class="work-page">
+
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <ul class="nav__list">
+                <li><a class="nav__link" href="index.html">Home</a></li>
+                <li><a class="nav__link" href="about.html">About</a></li>
+                <li><a class="nav__link" href="work.html" aria-current="page">Works</a></li>
+                <li><a class="nav__link" href="contact.html">Contacts</a></li>
+                <li class="nav__more">
+                    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-dropdown" aria-label="More options">
+                        <span class="nav__toggle-icon" aria-hidden="true"></span>
+                    </button>
+                    <div class="nav__dropdown" id="nav-dropdown" hidden>
+                        <p class="nav__dropdown-title">More</p>
+                        <div class="nav__dropdown-space">
+                            <!-- Theme, sounds and other options will go here -->
+                            <span>Theme &middot; Sounds &middot; More<br>coming soon</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="topic-nav" aria-label="Work categories" data-topic-nav>
+            <ul class="topic-nav__list">
+                <li class="topic-nav__item">
+                    <a class="topic-nav__link topic-nav__link--gamedevelopment" href="#gamedevelopment" aria-current="location">Gamedevelopment</a>
+                </li>
+                <li class="topic-nav__item">
+                    <a class="topic-nav__link topic-nav__link--engineering" href="#engineering">Engineering</a>
+                </li>
+                <li class="topic-nav__item">
+                    <a class="topic-nav__link topic-nav__link--art" href="#art">Art</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="works">
+        <section class="work-topic work-topic--gamedevelopment" id="gamedevelopment" aria-labelledby="gamedevelopment-title">
+            <div class="work-topic__inner">
+                <h2 class="work-topic__title" id="gamedevelopment-title">Gamedevelopment Projcet</h2>
+
+                <div class="work-projects">
+                    <article class="work-project">
+                        <figure class="work-project__media">
+                            <img class="work-project__image" src="assets/HG/HG_1.png" alt="Hauling Garbage Horror" width="1000" height="1000" loading="lazy" decoding="async">
+                        </figure>
+                        <div class="work-project__body">
+                            <p class="work-project__meta">2026 &middot; Godot Engine - Currently In Development</p>
+                            <h3 class="work-project__title">Project Eclips : Hauling Garbage</h3>
+                            <p class="work-project__description">Retro Graphic styled short horror game that shows the journey of a garbage collection night shift.</p>
+                        </div>
+                    </article>
+
+                    <article class="work-project">
+                        <figure class="work-project__media">
+                            <img class="work-project__image" src="assets/YRR.png" alt="You Are Rewinded - Game Jam Game" width="1000" height="1000" loading="lazy" decoding="async">
+                        </figure>
+                        <div class="work-project__body">
+                            <p class="work-project__meta">2020 &middot; Unity - Very Old</p>
+                            <h3 class="work-project__title">You Are Rewinded</h3>
+                            <p class="work-project__description">A simple small game for submission for <b>Brakeys Game Jam 2020</b>.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-topic work-topic--engineering" id="engineering" aria-labelledby="engineering-title">
+            <div class="work-topic__inner">
+                <h2 class="work-topic__title" id="engineering-title">Engineering Projects</h2>
+
+               <div class="work-projects">
+                    <article class="work-project">
+                        <figure class="work-project__media">
+                            <img class="work-project__image" src="assets/engineering/Flood_1.png" alt="RL Flood it Research" width="1000" height="1000" loading="lazy" decoding="async">
+                        </figure>
+                        <div class="work-project__body">
+                            <p class="work-project__meta">2026 &middot; Reinforcement Learning based Research - Currently in Development</p>
+                            <h3 class="work-project__title">Flood Filling Puzzel &middot; RL</h3>
+                            <p class="work-project__description">Developing Website to run the flood it game for data collection for RL research purpose.</p>
+                        </div>
+                    </article>
+                    <article class="work-project">
+                        <figure class="work-project__media">
+                            <img class="work-project__image" src="assets/engineering/DL_logo.png" alt="Digilock" width="1000" height="1000" loading="lazy" decoding="async">
+                        </figure>
+                        <div class="work-project__body">
+                            <p class="work-project__meta">2026 &middot; Embedded System</p>
+                            <h3 class="work-project__title">Digilock</h3>
+                            <p class="work-project__description">A Simulation Based Smart Door Lock System with deticated website, backend system, database system and esp 32 simulated connection. The project was made as a group of 4 people listed in the following github page.</p>
+                            <p class="work-project__description">Github - <a href="https://github.com/Binay12797/Digi-Lock">https://github.com/Binay12797/Digi-Lock</a></p>
+                        </div>
+                    </article>
+                    <article class="work-project">
+                        <figure class="work-project__media">
+                            <img class="work-project__image" src="assets/engineering/solnote.png" alt="SolNote" width="1000" height="1000" loading="lazy" decoding="async">
+                        </figure>
+                        <div class="work-project__body">
+                            <p class="work-project__meta">2026 &middot; Personal C# Project</p>
+                            <h3 class="work-project__title">SolNote</h3>
+                            <p class="work-project__description">A simple CUI based Note taking software as a personal project to learn and explore C# programming langauge.</p>
+                        </div>
+                    </article>
+
+                    <article class="work-project">
+                        <figure class="work-project__media">
+                            <img class="work-project__image" src="assets/engineering/MUSE_1.png" alt="MUSE" width="1000" height="1000" loading="lazy" decoding="async">
+                        </figure>
+                        <div class="work-project__body">
+                            <p class="work-project__meta">2026 &middot; DBMS Mini Project - Website Down</p>
+                            <h3 class="work-project__title">MUSE</h3>
+                            <p class="work-project__description">Simple Music Streaming database workflow project to understand and implement the concept of Database Managament, and SQL querries. The group members involved are mentioned in the github page</p>
+                            <p class="work-project__description">Github - <a href="https://github.com/Sambeg-Stha/MUSE-Music-System">https://github.com/Sambeg-Stha/MUSE-Music-System</a></p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="work-topic work-topic--art" id="art" aria-labelledby="art-title">
+            <div class="art__header">
+                <h2 class="work-topic__title" id="art-title">Art</h2>
+            </div>
+
+            <!-- Auto-cycling artwork strip -->
+            <div class="art-marquee" data-art-marquee aria-hidden="true">
+                <div class="art-marquee__track">
+                    <div class="art-marquee__group">
+                        <div class="art-marquee__item"><img src="assets/art/thumbs/cc.jpg" alt="" width="1400" height="1400" loading="lazy" draggable="false"></div>
+                        <div class="art-marquee__item"><img src="assets/art/thumbs/IMG_1309.jpg" alt="" width="1050" height="1400" loading="lazy" draggable="false"></div>
+                        <div class="art-marquee__item"><img src="assets/art/thumbs/IMG_1315.jpg" alt="" width="1050" height="1400" loading="lazy" draggable="false"></div>
+                        <div class="art-marquee__item"><img src="assets/art/thumbs/IMG_1330.jpg" alt="" width="1050" height="1400" loading="lazy" draggable="false"></div>
+                        <div class="art-marquee__item"><img src="assets/art/thumbs/IMG_2410.jpg" alt="" width="1400" height="1050" loading="lazy" draggable="false"></div>
+                        <div class="art-marquee__item"><img src="assets/art/thumbs/Pain.jpg" alt="" width="785" height="1400" loading="lazy" draggable="false"></div>
+                        <div class="art-marquee__item"><img src="assets/art/thumbs/FELINE.jpg" alt="" width="1080" height="1350" loading="lazy" draggable="false"></div>
+                        <div class="art-marquee__item"><img src="assets/art/thumbs/RETRO.jpg" alt="" width="1080" height="1350" loading="lazy" draggable="false"></div>
+                        <div class="art-marquee__item"><img src="assets/art/thumbs/SPIDERMAN.jpg" alt="" width="1080" height="1350" loading="lazy" draggable="false"></div>
+                        <div class="art-marquee__item"><img src="assets/art/thumbs/TRP_V_1.jpg" alt="" width="1050" height="1400" loading="lazy" draggable="false"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="art__content">
+                <!-- Project showcase -->
+                <section class="art-block" aria-labelledby="art-projects-title">
+                    <h3 class="art-block__title" id="art-projects-title">Projects</h3>
+                    <ul class="art-grid art-grid--projects" data-art-projects>
+                        <li class="art-tile">
+                            <button class="art-tile__button" type="button" data-project="TEMP" aria-label="TEMP">
+                                <img class="art-tile__image" src="icon/red-square.svg" alt="" width="800" height="800" loading="lazy">
+                                <span class="art-tile__caption" aria-hidden="true">WIP</span>
+                            </button>
+                        </li>
+                        <li class="art-tile">
+                            <button class="art-tile__button" type="button" data-project="Environment Study" aria-label="Open Environment Study project">
+                                <img class="art-tile__image" src="icon/red-square.svg" alt="" width="800" height="800" loading="lazy">
+                                <span class="art-tile__caption" aria-hidden="true">WIP</span>
+                            </button>
+                        </li>
+                        <li class="art-tile">
+                            <button class="art-tile__button" type="button" data-project="Poster Series" aria-label="Open Poster Series project">
+                                <img class="art-tile__image" src="icon/red-square.svg" alt="" width="800" height="800" loading="lazy">
+                                <span class="art-tile__caption" aria-hidden="true">WIP</span>
+                            </button>
+                        </li>
+                        <li class="art-tile">
+                            <button class="art-tile__button" type="button" data-project="Creature Design" aria-label="Open Creature Design project">
+                                <img class="art-tile__image" src="icon/red-square.svg" alt="" width="800" height="800" loading="lazy">
+                                <span class="art-tile__caption" aria-hidden="true">WIP</span>
+                            </button>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Animation / YouTube channel -->
+                <section class="art-block" aria-labelledby="art-animation-title">
+                    <h3 class="art-block__title" id="art-animation-title">Animation</h3>
+                    <div class="art-animation">
+                        <p class="art-animation__label">YouTube channel</p>
+                        <p class="art-animation__note">Reserved space &mdash; animation work coming soon</p>
+                    </div>
+                </section>
+
+                <!-- Illustration &amp; artwork list -->
+                <section class="art-block" aria-labelledby="art-gallery-title">
+                    <h3 class="art-block__title" id="art-gallery-title">Illustration &amp; Artwork</h3>
+                    <ul class="art-grid art-grid--gallery">
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/AOAB.jpg" alt="Artwork 01 by Sambeg Shrestha" width="731" height="1002" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/AVKL7176.jpg" alt="Artwork 02 by Sambeg Shrestha" width="1120" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/cc.jpg" alt="Artwork 03 by Sambeg Shrestha" width="1400" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/FELINE.jpg" alt="Artwork 04 by Sambeg Shrestha" width="1080" height="1350" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1304.jpg" alt="Artwork 05 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1305.jpg" alt="Artwork 06 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1308.jpg" alt="Artwork 07 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1309.jpg" alt="Artwork 08 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1315.jpg" alt="Artwork 09 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1319.jpg" alt="Artwork 10 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1320.jpg" alt="Artwork 11 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1321.jpg" alt="Artwork 12 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1330.jpg" alt="Artwork 13 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1333.jpg" alt="Artwork 14 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1337.jpg" alt="Artwork 15 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1347.jpg" alt="Artwork 16 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1349.jpg" alt="Artwork 17 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1354.jpg" alt="Artwork 18 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1360.jpg" alt="Artwork 19 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1366.jpg" alt="Artwork 20 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1368.jpg" alt="Artwork 21 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_1650.jpg" alt="Artwork 22 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_2410.jpg" alt="Artwork 23 by Sambeg Shrestha" width="1400" height="1050" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/IMG_8527.jpg" alt="Artwork 24 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/Moonlight.jpg" alt="Artwork 25 by Sambeg Shrestha" width="1080" height="1350" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/Pain.jpg" alt="Artwork 26 by Sambeg Shrestha" width="785" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/RBHJ7281.jpg" alt="Artwork 27 by Sambeg Shrestha" width="1120" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/RETRO.jpg" alt="Artwork 28 by Sambeg Shrestha" width="1080" height="1350" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/SPIDERMAN.jpg" alt="Artwork 29 by Sambeg Shrestha" width="1080" height="1350" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/AP_R.jpg" alt="Artwork 30 by Sambeg Shrestha" width="1400" height="1399" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/AP_T.jpg" alt="Artwork 31 by Sambeg Shrestha" width="1399" height="1400" loading="lazy" decoding="async"></li>
+                        <li class="art-tile art-tile--still"><img src="assets/art/thumbs/TRP_V_1.jpg" alt="Artwork 32 by Sambeg Shrestha" width="1050" height="1400" loading="lazy" decoding="async"></li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
