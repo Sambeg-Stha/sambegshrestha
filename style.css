@@ -988,6 +988,41 @@ body {
     color: rgb(255 255 255 / 0.86);
 }
 
+/* Description shown for the selected topic */
+.interests__panel {
+    display: grid;
+    gap: 0.9rem;
+    max-width: 60ch;
+    text-align: left;
+}
+
+.interests__panel .interests__content-text {
+    max-width: none;
+}
+
+/* Inline emphasis inside topic descriptions */
+.interests__panel strong,
+.interests__panel cite {
+    color: #f2c94c;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.interests__panel code {
+    padding: 0.08em 0.4em;
+    border-radius: 4px;
+    background: rgb(0 0 0 / 0.22);
+    color: #ffffff;
+    font-family: 'JetBrainsMono', monospace;
+    font-size: 0.85em;
+}
+
+.interests__panel abbr[title] {
+    text-decoration: underline dotted rgb(255 255 255 / 0.65);
+    text-underline-offset: 0.18em;
+    cursor: help;
+}
+
 /* Yellow section: other interests */
 .about-yellow {
     width: 100%;

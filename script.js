@@ -213,6 +213,7 @@ const interests = document.querySelector('[data-interests]');
 if (interests) {
     const buttons = Array.from(interests.querySelectorAll('[data-interest]'));
     const output = interests.querySelector('[data-interest-output]');
+    const panels = Array.from(interests.querySelectorAll('[data-interest-panel]'));
 
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
@@ -221,8 +222,12 @@ if (interests) {
             });
 
             if (output) {
-                output.textContent = `${button.dataset.interest} — work for this topic will appear here.`;
+                output.hidden = true;
             }
+
+            panels.forEach((panel) => {
+                panel.hidden = panel.dataset.interestPanel !== button.dataset.interest;
+            });
         });
     });
 }
