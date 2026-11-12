@@ -75,18 +75,6 @@ if (artMarquee) {
     }
 }
 
-/* ---------- Art project tiles ---------- */
-
-const artProjects = document.querySelector('[data-art-projects]');
-
-if (artProjects) {
-    artProjects.addEventListener('click', (event) => {
-        const tile = event.target.closest('[data-project]');
-        if (!tile) return;
-        alert(`${tile.dataset.project} opened`);
-    });
-}
-
 /* ---------- Navigation dropdown ---------- */
 
 const navToggle = document.querySelector('.nav__toggle');
@@ -135,8 +123,8 @@ if (carousel) {
     slides.slice(0, VISIBLE_COUNT).forEach((slide) => {
         const clone = slide.cloneNode(true);
         clone.setAttribute('aria-hidden', 'true');
-        clone.querySelectorAll('button').forEach((button) => {
-            button.tabIndex = -1;
+        clone.querySelectorAll('a, button').forEach((control) => {
+            control.tabIndex = -1;
         });
         track.appendChild(clone);
     });
@@ -202,13 +190,6 @@ if (carousel) {
 
     window.addEventListener('resize', measure);
     measure();
-
-    /* Placeholder project action */
-    track.addEventListener('click', (event) => {
-        const project = event.target.closest('.project');
-        if (!project) return;
-        alert(`${project.dataset.project} opened`);
-    });
 }
 
 /* ---------- Contact icons ---------- */

@@ -1,0 +1,318 @@
+/* ============================================================
+   Project pages + floating project window
+   ============================================================ */
+
+:root {
+    --project-art: #2f6b4f;
+    --project-engineering: #bf4342;
+    --project-gamedevelopment: #2f6fb5;
+}
+
+/* ---------- Standalone project page ---------- */
+
+.project-page {
+    padding-top: 0;
+    background: var(--project-color, var(--project-art));
+    color: #ffffff;
+    text-align: left;
+}
+
+.project-page--art {
+    --project-color: var(--project-art);
+}
+
+.project-page--engineering {
+    --project-color: var(--project-engineering);
+}
+
+.project-page--gamedevelopment {
+    --project-color: var(--project-gamedevelopment);
+}
+
+.project-page__back {
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border: 1px solid rgb(255 255 255 / 0.4);
+    border-radius: 50%;
+    background: rgb(0 0 0 / 0.2);
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1;
+    text-decoration: none;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.project-page__back:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: var(--project-color, var(--project-art));
+}
+
+.project-page__back:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
+.project-content {
+    width: 100%;
+    max-width: 78rem;
+    margin: 0 auto;
+    padding: clamp(1rem, 4vw, 3rem);
+}
+
+/* Keep the colored block visible while the description is empty */
+.project-page .project-content {
+    min-height: 100vh;
+}
+
+/* ---------- Floating project window ---------- */
+
+.project-modal {
+    position: fixed;
+    inset: 0;
+    width: min(72rem, calc(100% - 2rem));
+    max-width: none;
+    max-height: min(88vh, 60rem);
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid rgb(255 255 255 / 0.28);
+    border-radius: 18px;
+    background: var(--project-color, var(--project-art));
+    color: #ffffff;
+    text-align: left;
+    box-shadow: 0 30px 90px rgb(0 0 0 / 0.45);
+}
+
+.project-modal--art {
+    --project-color: var(--project-art);
+}
+
+.project-modal--engineering {
+    --project-color: var(--project-engineering);
+}
+
+.project-modal--gamedevelopment {
+    --project-color: var(--project-gamedevelopment);
+}
+
+.project-modal::backdrop {
+    background: rgb(0 0 0 / 0.62);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+}
+
+.project-modal[open] {
+    animation: project-modal-in 0.22s ease-out;
+}
+
+.project-modal[open]::backdrop {
+    animation: project-modal-backdrop-in 0.22s ease-out;
+}
+
+@keyframes project-modal-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px) scale(0.985);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes project-modal-backdrop-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.project-modal__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 0.9rem 0.75rem 1.15rem;
+    border-bottom: 1px solid rgb(255 255 255 / 0.2);
+    background: rgb(0 0 0 / 0.18);
+}
+
+.project-modal__label {
+    font-family: 'JetBrainsMono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: rgb(255 255 255 / 0.72);
+}
+
+.project-modal__close {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    padding: 0;
+    border: 1px solid rgb(255 255 255 / 0.4);
+    border-radius: 50%;
+    background: rgb(255 255 255 / 0.08);
+    color: #ffffff;
+    font-family: 'Unica One', Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.project-modal__close:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: var(--project-color, var(--project-art));
+}
+
+.project-modal__close:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
+.project-modal__body {
+    min-height: 52vh;
+    max-height: calc(min(88vh, 60rem) - 3.8rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+.project-modal__body .project-content {
+    min-height: 52vh;
+    padding: clamp(1.25rem, 3vw, 2.5rem);
+}
+
+.project-modal__status {
+    display: grid;
+    place-items: center;
+    min-height: 52vh;
+    padding: 2rem;
+    font-family: 'JetBrainsMono', monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(255 255 255 / 0.8);
+}
+
+.project-modal__status a {
+    color: #f2c94c;
+}
+
+/* Scroll lock while the floating window is open */
+body.has-project-modal {
+    overflow: hidden;
+}
+
+/* ---------- Card links reuse the existing button look ---------- */
+
+a.project,
+a.art-tile__button {
+    text-decoration: none;
+    color: inherit;
+}
+
+.work-project__open {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1rem;
+    padding: 0.5rem 0.9rem;
+    border: 1px solid rgb(255 255 255 / 0.45);
+    border-radius: 999px;
+    background: rgb(255 255 255 / 0.08);
+    color: #ffffff;
+    font-family: 'Unica One', Arial, sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.work-project__open::after {
+    content: "\2192";
+    font-size: 0.9em;
+}
+
+.work-project__open:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #1e1e1e;
+}
+
+.work-project__open:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 700px) {
+    .project-modal {
+        width: 100%;
+        max-height: none;
+        height: 100dvh;
+        border: 0;
+        border-radius: 0;
+    }
+
+    .project-modal__body {
+        max-height: calc(100dvh - 3.8rem);
+    }
+}
+
+/* ---------- Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+    .project-modal[open],
+    .project-modal[open]::backdrop {
+        animation: none;
+    }
+}
+
+/* ---------- Print: used when saving a project page as a PDF ---------- */
+
+@media print {
+    @page {
+        size: A4;
+        margin: 12mm;
+    }
+
+    .project-page__back {
+        display: none !important;
+    }
+
+    .project-page {
+        padding: 0;
+    }
+
+    .project-content {
+        max-width: none;
+        padding: 0;
+    }
+
+    .project-page {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    .project-block,
+    .project-hero,
+    .project-gallery {
+        break-inside: avoid;
+    }
+}
