@@ -1,3 +1,20 @@
+/* ---------- Content protection ---------- */
+
+/* Disable the right-click menu on the page */
+document.addEventListener('contextmenu', (event) => event.preventDefault());
+
+/* Images cannot be dragged out of the page */
+document.addEventListener('dragstart', (event) => {
+    if (event.target instanceof HTMLImageElement) {
+        event.preventDefault();
+    }
+});
+
+document.querySelectorAll('img').forEach((image) => {
+    image.setAttribute('draggable', 'false');
+    image.addEventListener('dragstart', (event) => event.preventDefault());
+});
+
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
