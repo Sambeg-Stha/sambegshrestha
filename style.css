@@ -1567,7 +1567,8 @@ body {
 }
 
 .art-grid--projects {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    /* auto-fit keeps the row balanced when there are fewer than 4 projects */
+    grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
 }
 
 /* Masonry-style gallery that keeps each artwork's natural aspect ratio */

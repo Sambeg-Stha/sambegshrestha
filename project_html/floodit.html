@@ -3,19 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Eclips : Hauling Garbage &mdash; Sambeg Shrestha</title>
-    <link rel="stylesheet" href="style.css?v=6">
-    <link rel="stylesheet" href="fonts.css">
-    <link rel="stylesheet" href="project.css?v=4">
-    <script src="script.js?v=7" defer></script>
+    <title>Flood It Web &mdash; Sambeg Shrestha</title>
+    <link rel="stylesheet" href="../style.css?v=8">
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="project.css?v=6">
+    <script src="../script.js?v=7" defer></script>
 </head>
-<body class="project-page project-page--gamedevelopment">
+<body class="project-page project-page--engineering">
 
-    <a class="project-page__back" href="work.html" aria-label="Back to works">
+    <a class="project-page__back" href="../work.html" aria-label="Back to works">
         <span aria-hidden="true">&larr;</span>
     </a>
 
-    <main id="project-content" class="project-content" data-category="gamedevelopment" aria-label="Project details">
+    <main id="project-content" class="project-content" data-category="engineering" aria-label="Project details">
 
         <!-- ============================================================
              01 · Intro
@@ -30,8 +30,8 @@
                 </figure>
 
                 <div class="project-hero__caption">
-                    <h1 class="project-hero__title"></h1>
-                    <p class="project-hero__meta"></p>
+                    <h1 class="project-hero__title">Flood It</h1>
+                    <p class="project-hero__meta">Reinforcement Learning Research</p>
                 </div>
             </div>
         </section>
@@ -45,13 +45,17 @@
         <section class="project-section" aria-label="Project description">
             <div class="project-description">
                 <figure class="project-description__media">
-                    <img class="project-description__image" src="assets/HG/HG_1.png" alt="" width="800" height="800">
+                    <img class="project-description__image" src="../assets/engineering/Flood_1.png" alt="" width="800" height="800">
                 </figure>
 
                 <div class="project-description__body">
-                    <h2 class="project-section__title"></h2>
-                    <p class="project-text"></p>
-                    <p class="project-text"></p>
+                    <h2 class="project-section__title">Flood It : RL Research</h2>
+                    <p class="project-text">Flood it is a puzzel game where player flood the entire grid with and color for a pivot flood conner following a simple set of rules : cells having the same color
+                        as the pivot and are at the boundary of the flooded region are consumed by the flooded region
+                    </p>
+                    <p class="project-text">The project focuses on the developement of a flood it web game for data collection of game states, action taken by the player and moves for 
+                        research based on applying Reinforcement Learning concept and method to the project for some result
+                    </p>
                 </div>
             </div>
         </section>
@@ -63,13 +67,12 @@
              Simple bullet points. Duplicate one <li> per point.
              ============================================================ -->
         <section class="project-section" aria-label="Project goals and vision">
-            <h2 class="project-section__title"></h2>
+            <h2 class="project-section__title">Project Goals</h2>
 
             <ul class="project-goals">
-                <li class="project-goal"></li>
-                <li class="project-goal"></li>
-                <li class="project-goal"></li>
-                <li class="project-goal"></li>
+                <li class="project-goal">Develop Flood it game for people to play in their browser</li>
+                <li class="project-goal">Collection of Game state, actions and reward from played games by user</li>
+                <li class="project-goal">Using data collected of RL based research </li>
             </ul>
         </section>
 
@@ -81,20 +84,27 @@
              Duplicate one <article class="project-log__entry"> per update.
              ============================================================ -->
         <section class="project-section" aria-label="Current development status">
-            <h2 class="project-section__title"></h2>
+            <h2 class="project-section__title">Development Logs</h2>
 
             <div class="project-log">
                 <article class="project-log__entry">
-                    <time class="project-log__date" datetime=""></time>
+                    <time class="project-log__date" datetime="28/10/2026">28/10/2026</time>
 
                     <div class="project-log__body">
-                        <h3 class="project-log__title"></h3>
-                        <p class="project-text"></p>
-                        <figure class="project-log__media">
+                        <h3 class="project-log__title">Web deployment Problem</h3>
+                        <p class="project-text">
+                            After the developemt of a flood it game and server using the python fastapi the project was 
+                            able to collect data from played game and
+                            store it in a csv file.  
+                        </p>
+                        <p class = "project-text">
+                            After more research on deployment, it seems that github does not support dynamic page wiht python server so the
+                            deployment only give the static page. Now tryign find a work around on this
+                        </p>
+                        <!--<figure class="project-log__media">
                             <!-- Update image goes here:
                                  <img src="" alt="">
-                            -->
-                        </figure>
+                        </figure>-->
                     </div>
                 </article>
             </div>
@@ -106,7 +116,7 @@
              05 · Where to See the Project
              One universal link block. Duplicate the <li> for more links.
              ============================================================ -->
-        <section class="project-section" aria-label="Where to see the project">
+        <!--<section class="project-section" aria-label="Where to see the project">
             <h2 class="project-section__title"></h2>
 
             <ul class="project-links">
@@ -120,6 +130,7 @@
         </section>
 
         <hr class="project-divider">
+        -->
 
         <!-- ============================================================
              06 · Extra

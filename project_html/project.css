@@ -139,6 +139,7 @@
 }
 
 .project-modal__bar {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -154,6 +155,45 @@
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: rgb(255 255 255 / 0.72);
+}
+
+/* "Full page" sits dead centre of the bar, between the label and the close
+   button, so it stays centred whatever the label says. */
+.project-modal__full {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.42rem 0.9rem;
+    border: 1px solid rgb(255 255 255 / 0.4);
+    border-radius: 999px;
+    background: rgb(255 255 255 / 0.08);
+    color: #ffffff;
+    font-family: 'JetBrainsMono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.25s ease, border-color 0.25s ease, color 0.25s ease;
+}
+
+.project-modal__full[hidden] {
+    display: none;
+}
+
+.project-modal__full:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: var(--project-color, var(--project-art));
+}
+
+.project-modal__full:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 3px;
 }
 
 .project-modal__close {
@@ -528,6 +568,75 @@ a.art-tile__button {
     background: rgb(0 0 0 / 0.14);
 }
 
+/* ---------- 04b · Image gallery ----------
+   Drop any number of <figure class="project-gallery__item"> into a single
+   .project-gallery. The grid adapts to how many images are inside it:
+       1 image   -> one full-width highlight
+       2 images  -> two side by side
+       3+ images -> three per row, extra rows wrap underneath
+   Add an <img> and an optional <figcaption> to each item. Reusable anywhere
+   inside a project page (log, extra section, modal). */
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(0.5rem, 1.2vw, 0.9rem);
+    margin: 0;
+}
+
+/* Exactly one image: full-width highlight. */
+.project-gallery:has(> :only-child) {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+/* Exactly two images: side by side. */
+.project-gallery:has(> :nth-child(2):last-child) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-gallery__item {
+    display: grid;
+    align-content: start;
+    gap: 0.45rem;
+    min-width: 0;
+    margin: 0;
+}
+
+.project-gallery__item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 1px solid rgb(255 255 255 / 0.18);
+    border-radius: 12px;
+    background: rgb(0 0 0 / 0.14);
+}
+
+/* A lone image keeps a wide, hero-like crop; a pair reads better at 4:3. */
+.project-gallery:has(> :only-child) .project-gallery__item img {
+    aspect-ratio: 16 / 9;
+}
+
+.project-gallery:has(> :nth-child(2):last-child) .project-gallery__item img {
+    aspect-ratio: 4 / 3;
+}
+
+.project-gallery__item figcaption {
+    font-family: 'JetBrainsMono', monospace;
+    font-size: 0.68rem;
+    letter-spacing: 0.08em;
+    color: rgb(255 255 255 / 0.62);
+}
+
+/* Empty gallery: dashed drop zone, like the other media placeholders. */
+.project-gallery:empty {
+    aspect-ratio: 16 / 9;
+    border: 1px dashed rgb(255 255 255 / 0.22);
+    border-radius: 12px;
+    background: rgb(0 0 0 / 0.14);
+}
+
 /* ---------- 05 · Where to see the project ---------- */
 
 .project-links {
@@ -570,8 +679,8 @@ a.art-tile__button {
     width: 1.6rem;
     height: 1.6rem;
     background-color: currentColor;
-    -webkit-mask: url("icon/down-arrow.svg") center / contain no-repeat;
-    mask: url("icon/down-arrow.svg") center / contain no-repeat;
+    -webkit-mask: url("../icon/down-arrow.svg") center / contain no-repeat;
+    mask: url("../icon/down-arrow.svg") center / contain no-repeat;
     transform: rotate(-45deg);
 }
 
@@ -645,6 +754,20 @@ a.art-tile__button {
     .project-log__date:empty {
         width: min(9rem, 55%);
         min-height: 1.9rem;
+    }
+}
+
+@media (max-width: 560px) {
+    /* Three-across gets cramped on phones; cap the gallery at two per row.
+       The one-image and two-image rules above are more specific, so they
+       keep their own layout. */
+    .project-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* Keep room in the window bar for the centred "Full page" button. */
+    .project-modal__label {
+        display: none;
     }
 }
 

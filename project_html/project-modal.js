@@ -12,6 +12,7 @@
     let dialog = null;
     let body = null;
     let label = null;
+    let fullPage = null;
     let lastTrigger = null;
     let request = null;
 
@@ -55,6 +56,11 @@
         dialog.className = 'project-modal';
         label.textContent = 'Project';
 
+        if (fullPage) {
+            fullPage.hidden = true;
+            fullPage.removeAttribute('href');
+        }
+
         if (lastTrigger) {
             lastTrigger.focus({ preventScroll: true });
             lastTrigger = null;
@@ -84,6 +90,14 @@
         label.className = 'project-modal__label';
         label.textContent = 'Project';
 
+        /* Centred link in the bar: leaves the floating window and opens the
+           standalone page. Hidden until a project page is known. */
+        fullPage = document.createElement('a');
+        fullPage.className = 'project-modal__full';
+        fullPage.textContent = 'Full page';
+        fullPage.setAttribute('aria-label', 'Open this project as a full page');
+        fullPage.hidden = true;
+
         const close = document.createElement('button');
         close.className = 'project-modal__close';
         close.type = 'button';
@@ -91,7 +105,7 @@
         close.textContent = '\u00d7';
         close.addEventListener('click', closeModal);
 
-        bar.append(label, close);
+        bar.append(label, fullPage, close);
 
         body = document.createElement('div');
         body.className = 'project-modal__body';
@@ -152,6 +166,11 @@
         }
 
         const source = pageUrl.href;
+
+        if (fullPage) {
+            fullPage.href = source;
+            fullPage.hidden = false;
+        }
 
         document.body.classList.add('has-project-modal');
         status('Loading project\u2026');
